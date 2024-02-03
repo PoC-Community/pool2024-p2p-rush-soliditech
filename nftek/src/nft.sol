@@ -22,11 +22,15 @@ contract NFTek is ERC721, Ownable {
         require(max > 0 && max > MAXNFT, "new max wrong");
         MAXNFT = max;
     }
+    function _toggleSaleState() public onlyOwner {
+        saleState = !saleState;
+    }
     function _mintNFTek(uint256 nbNewNft) public payable {
         require(saleState == true, "Sale off");
         require(nbNft + nbNewNft < MAXNFT, "too many nft");
         require(nbNewNft * price == msg.value, "");
-        for (int i = 1; i < (nbNft + i); i++) {
+        for (uint256 i = 1; i <= nbNewNft; i++) {
+            _safeMint(msg.sender, nbNft + i, "");
         }
     }
     function _baseURI() internal view virtual override returns (string memory) {
