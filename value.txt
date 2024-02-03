@@ -1,0 +1,26 @@
+Zyra,Planète lumineuse aux forêts bioluminescentes
+Nebulae,Un monde gazéifié aux ciels changeants
+Aurora,Xénoplanète où des aurores boréales éternelles illuminent les cieux
+Vortexia,Planète aux puissants tourbillons magnétiques
+Cryoterra,Un monde de glace et de cristaux
+Pyrothos,Planète brûlante avec des mers de lave en fusion
+Miragea,Un monde désertique aux illusions visuelles constantes
+Aetheris,Une planète gazeuse aux nuages scintillants 
+Ombrae,Un monde plongé dans une obscurité perpétuelle
+Harmonia,Planète paisible avec une symphonie naturelle de sons harmonieux
+Eclipsara,Un monde en constante éclipse entre deux étoiles
+Iridesca,Planète aux couleurs changeantes selon l'heure du jour 
+Pétalastra,Une planète où la flore prend des formes étonnamment artistiques
+Etherion,Un monde flottant dans un nuage d'éther
+Cristallum,Planète cristalline aux formations géométriques éblouissantes
+Phénixia,Un monde où la vie renaît de ses cendres régulièrement
+Luminara,Planète brillante éclairée par une étoile lointaine
+Sérénité,Un monde calme avec des océans d'eaux tranquilles
+Aquilae,Planète ornée de vastes ailes rocheuses
+Eclaria,Un monde constamment baigné par la lumière éclatante
+Stellara,Planète dotée de constellations vivantes dans son ciel
+Fulgura,Un monde électrifié avec des tempêtes perpétuelles
+Spectra,Planète aux paysages chromatiques et changeants
+Magmara,Une planète de magma en fusion avec des rivières de feu
+Floriana,Un monde floral où chaque fleur possède une propriété unique
+AstraLuna,Planète où les deux lunes créent une danse céleste éternelle
