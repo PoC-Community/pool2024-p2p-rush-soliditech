@@ -44,6 +44,6 @@ output = subprocess.run(commande_bash_output, capture_output=True, text=True)
 verif_cid_output = re.search(r"IpfsHash: '([^']+)'", output.stdout)
 output_cid = verif_cid_output.group(1)
 
-print("mon cid de sortie :", output_cid)
 # pour vérifier que tout est bon taper dans votre barre de recherche :
-# https://ipfs.io/ipfs/"output_cid"
+print("lien du déploiment sur l'ipfs :", "https://ipfs.io/ipfs/"+ output_cid)
+
