@@ -26,6 +26,8 @@ contract NFTek is ERC721, Ownable {
         require(saleState == true, "Sale off");
         require(nbNft + nbNewNft < MAXNFT, "too many nft");
         require(nbNewNft * price == msg.value, "");
+        for (int i = 1; i < (nbNft + i); i++) {
+        }
     }
     function _baseURI() internal view virtual override returns (string memory) {
         return baseURI;
