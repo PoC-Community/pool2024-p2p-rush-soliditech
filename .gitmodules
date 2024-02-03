@@ -1,3 +1,9 @@
 [submodule "lib/openzeppelin-contracts"]
 	path = lib/openzeppelin-contracts
 	url = https://github.com/OpenZeppelin/openzeppelin-contracts
+[submodule "nftek/lib/forge-std"]
+	path = nftek/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
+[submodule "nftek/lib/openzeppelin-contracts"]
+	path = nftek/lib/openzeppelin-contracts
+	url = https://github.com/OpenZeppelin/openzeppelin-contracts
