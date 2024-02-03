@@ -18,25 +18,41 @@ contract NFTek is ERC721, Ownable {
         saleState = true;
     }
 
-    function _changeMaxNft(uint256 max) public onlyOwner {
+    function changeMaxNft(uint256 max) public onlyOwner {
         require(max > 0 && max > MAXNFT, "new max wrong");
         MAXNFT = max;
     }
-    function _toggleSaleState() public onlyOwner {
+    function getMaxNft() public view returns (uint256) {
+        return MAXNFT;
+    }
+    function toggleSaleState() public onlyOwner {
         saleState = !saleState;
     }
-    function _mintNFTek(uint256 nbNewNft) public payable {
+    function mintNFTek(uint256 nbNewNft) public payable {
         require(saleState == true, "Sale off");
-        require(nbNft + nbNewNft < MAXNFT, "too many nft");
-        require(nbNewNft * price == msg.value, "");
+        require(nbNft + nbNewNft <= MAXNFT, "too many nft");
+        require(nbNewNft * price == msg.value, " not enough ether given");
         for (uint256 i = 1; i <= nbNewNft; i++) {
             _safeMint(msg.sender, nbNft + i, "");
         }
+        nbNft += nbNewNft;
     }
     function _baseURI() internal view virtual override returns (string memory) {
         return baseURI;
     }
-    function _setBaseURI(string memory newURI) public onlyOwner {
+    function getBaseURI() public view onlyOwner returns (string memory) {
+        return baseURI;
+    }
+    function setBaseURI(string memory newURI) public onlyOwner {
         baseURI = newURI;
+    }
+    function setPrice(uint256 _price) public onlyOwner {
+        price = _price;
+    }
+    function getPrice() public view returns (uint256) {
+        return price;
+    }
+    function getNbNFTek() public view returns (uint256) {
+        return nbNft;
     }
 }
